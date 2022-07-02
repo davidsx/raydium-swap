@@ -1,0 +1,131 @@
+.container {
+    width: 320px;
+    height: 480px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 1px 1px 24px 4px #dddddd;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .walletContainer {
+        height: 20px;
+        display: flex;
+        gap: 8px;
+
+        .wallet {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-weight: 500;
+            flex: 1;
+        }
+
+        .walletConnectButton {
+            width: 24px;
+            height: 24px;
+            border: none;
+            outline: none;
+            position: relative;
+            background-color: transparent;
+        }
+    }
+
+    .tokenContainer {
+        background-color: #ededed;
+        border-radius: 8px;
+        padding: 8px 16px;
+        height: 64px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .symbol {
+            text-transform: capitalize;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .icon {
+            position: relative;
+            flex: 0 0 32px;
+            width: 32px;
+            height: 32px;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+
+        .inputContainer {
+            height: 100%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-around;
+
+            .balance {
+                color: #c9c9c9;
+                font-size: 10px;
+                line-height: 10px;
+            }
+
+            .input {
+                background-color: #ededed;
+                width: 100%;
+                border: none;
+                outline: none;
+                font-size: 24px;
+                font-weight: 500;
+                text-align: right;
+            }
+        }
+    }
+
+    .priceContainer {
+        height: 24px;
+        display: flex;
+        align-items: center;
+
+        .price {
+            flex: 1;
+            font-size: 14px;
+        }
+
+        .changeDirectionButton {
+            border: none;
+            outline: none;
+            font-size: 20px;
+            line-height: 24px;
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .swapButton {
+        margin-top: auto;
+        width: 100%;
+        height: 36px;
+        border: none;
+        border-radius: 9px;
+        background-color: #262626;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        cursor: pointer;
+
+        &:disabled {
+            background-color: #c9c9c9;
+        }
+    }
+
+    .infoContainer {
+        color: #9c9c9c;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

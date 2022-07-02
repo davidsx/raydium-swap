@@ -1,0 +1,35 @@
+.container {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 16px;
+
+    .notiCard {
+        width: 360px;
+        height: 60px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 8px;
+        box-shadow: 1px 1px 24px 4px #dddddd;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .icon {
+            width: 32px;
+            height: 32px;
+        }
+
+        .title {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .message {
+            font-size: 14px;
+        }
+    }
+}
