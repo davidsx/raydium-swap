@@ -27,7 +27,7 @@ const TokenAmountInput: React.FC<Props> = ({ side }) => {
     );
 
     const onChange: React.ChangeEventHandler<HTMLInputElement> = async (e) => {
-        if (side === 'in') {
+        if (side === 'in' && /^[0-9.]*$/.test(e.currentTarget.value)) {
             useSwap.setState({ rawAmountIn: e.currentTarget.value });
             refreshSwap();
         }
